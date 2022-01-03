@@ -31,15 +31,20 @@ class Game
     if answer == question.sum
       puts "YES! You are correct!"
       self.score
-      self.start_game
+      self.turn
 
 
     else
       puts "Seriously? No!"
       @current_player.lives -= 1
       self.score
-      
-      puts "#{@current_player.name} wins with a score of #{@current_player.lives}"
+      if(@current_player.lives > 0)
+        self.start_game
+      else
+        puts "Game Over"
+        self.turn
+        puts "#{@current_player.name} wins with a score of #{@current_player.lives}"
+      end
 
     end
 
