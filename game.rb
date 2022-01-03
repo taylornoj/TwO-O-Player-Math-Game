@@ -31,11 +31,12 @@ class Game
     if answer == question.sum
       puts "YES! You are correct!"
       self.score
-      
+      self.start_game
 
     else
       puts "Seriously? No!"
-
+      @current_player.lives -= 1
+      self.score
     end
 
 
