@@ -1,16 +1,15 @@
 ## extract nouns for classes:
   # game > houses all the main code; gives structure to the game itself (behaviour)
-    # score - turn - winner
+  # initialize player1, player2, current_player
+    # METHODS: score - turn - start_game - winner
     # contains game loop
     # manages current player
     
   # player > initializes players by name and lives (state)
-    # name - lives 
+    # initialize name, lives 
 
   # question > formatting the question and setting up how the answer is calculated (state)
-    # new_question,  sum
-      # initialize number1 and number2 for the question
+    # initialize number1, number2
+    # METHODS: new_question,  sum
+      # new_question template
       # dictate what answer should be with sum
-
-
-# user I/O?
