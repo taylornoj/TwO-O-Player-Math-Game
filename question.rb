@@ -1,5 +1,5 @@
 class Question
-  attr_accessor :num1, :num2
+  attr_accessor :num1, :num2, :solution
 
   def initialize
     @num1 = rand(1..20)
