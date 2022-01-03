@@ -2,6 +2,7 @@ require "./player"
 require "./question"
 
 class Game
+  
   def initialize
     @player1 = Player.new('Taylor')
     @player2 = Player.new('Louis')
@@ -52,7 +53,7 @@ class Game
       
     end
     puts "\n"
-    puts "SCORE: #{@player1.name}: #{@player1.lives}/3 vs #{@player2.name}: #{@player2.lives}/3"
+    puts "SCORE: #{@player1.name}: #{@player1.lives}/3 -VS- #{@player2.name}: #{@player2.lives}/3"
     turn
   end
 
