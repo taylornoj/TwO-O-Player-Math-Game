@@ -27,6 +27,20 @@ class Game
     question = Question.new
     question.new_question(@current_player.name)
     answer = gets.chomp.to_i
+
+    if answer == question.sum
+      puts "YES! You are correct!"
+
+    else
+      puts "Seriously? No!"
+    end
+
+
+
+
+
+
+
   end
 
 
