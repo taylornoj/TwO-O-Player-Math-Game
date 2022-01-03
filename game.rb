@@ -33,11 +33,14 @@ class Game
       self.score
       self.start_game
 
+
     else
       puts "Seriously? No!"
       @current_player.lives -= 1
       self.score
+      
       puts "#{@current_player.name} wins with a score of #{@current_player.lives}"
+
     end
 
 
