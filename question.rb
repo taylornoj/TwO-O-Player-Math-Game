@@ -1,4 +1,4 @@
-require 'pp';
+
 
 class Question
 
@@ -9,7 +9,7 @@ class Question
   end
 
   def new_question(name)
-    puts "#{name}: What does #{num1} plus #{num2} equal?"
+    puts "#{name}: What does #{@num1} plus #{@num2} equal?"
   end
 
   def sum

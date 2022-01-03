@@ -7,20 +7,28 @@ class Game
     @player2 = Player.new('Louis', 3)
     @current_player = @player1
   end
+  
+    def score
+      puts "#{@player1.name}: #{@player1.lives}/3 vs #{@player2.name}: #{@player2.lives}/3"
+      puts "\n"
+      puts "----- NEW TURN -----"
+      puts "\n"
+    end
 
 
   def turn
+    @current_player = (@current_player == @player1) ? @player2 : @player1
   end
 
   def start_game
     puts "----- TwO-O-Player -----"
     puts "\n"
-    
+    self.turn
+    question = Question.new
+    question.new_question(@current_player.name)
+    answer = gets.chomp.to_i
   end
 
-
-  def score
-  end
 
 
 
