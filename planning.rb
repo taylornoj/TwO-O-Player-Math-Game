@@ -4,6 +4,7 @@
     # METHODS: score - turn - start_game - winner
     # contains game loop
     # manages current player
+    # contains user I/O
     
   # player > initializes players by name and lives (state)
     # initialize name, lives 
