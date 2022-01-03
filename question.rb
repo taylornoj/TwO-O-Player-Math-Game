@@ -1,3 +1,5 @@
+require 'pp';
+
 class Question
 
   def initialize

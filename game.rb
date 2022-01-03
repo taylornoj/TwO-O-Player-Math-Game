@@ -1,11 +1,11 @@
-require './players'
-require './question'
+require "./player"
+require "./question"
 
 class Game
   def initialize
-    @player1
-    @player2
-    @current_player
+    @player1 = Player.new('Taylor', 3)
+    @player2 = Player.new('Louis', 3)
+    @current_player = @player1
   end
 
 
@@ -13,6 +13,9 @@ class Game
   end
 
   def start_game
+    puts "----- TwO-O-Player -----"
+    puts "\n"
+    
   end
 
 
