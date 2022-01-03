@@ -30,9 +30,12 @@ class Game
 
     if answer == question.sum
       puts "YES! You are correct!"
+      self.score
+      
 
     else
       puts "Seriously? No!"
+
     end
 
 
