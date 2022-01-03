@@ -63,6 +63,10 @@ class Game
     turn
   end
 
+  def end_game
+    
+  end
+
 
 
 
